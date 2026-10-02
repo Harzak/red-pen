@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<PackageReference Include="Meziantou.Analyzer" Version="3.0.292">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Roslynator.Analyzers" Version="5.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <EditorConfigFiles Remove="C:\Workspaces\red-pen\src\redpen.core\.editorconfig" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="C:\Workspaces\red-pen\src\redpen.core\.editorconfig" />
+	</ItemGroup>
+</Project>

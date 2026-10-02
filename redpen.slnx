@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="tests/redpen.core.tests/redpen.core.tests.csproj" Id="082d8d7e-1606-457d-9829-03526b047897" />
+  </Folder>
+  <Project Path="src/redpen.core/redpen.core.csproj" />
+</Solution>
