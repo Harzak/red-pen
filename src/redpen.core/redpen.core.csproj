@@ -4,6 +4,11 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.AI" Version="10.10.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="10.0.12" />
+		<PackageReference Include="OllamaSharp" Version="5.5.0" />
 		<PackageReference Include="Roslynator.Analyzers" Version="5.0.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -14,5 +19,8 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <None Include="C:\Workspaces\red-pen\src\redpen.core\.editorconfig" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\redpen.abstractions\redpen.abstractions.csproj" />
 	</ItemGroup>
 </Project>
