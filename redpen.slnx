@@ -1,12 +1,12 @@
 <Solution>
-  <Folder Name="/samples/">
+  <Folder Name="/Samples/">
     <Project Path="samples/redpen.demo.console/redpen.demo.console.csproj" Id="c81d3af6-2d24-4ac2-9bef-d38ce2d13614" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="Directory.Build.props" />
     <File Path="todo.md" />
   </Folder>
-  <Folder Name="/tests/">
+  <Folder Name="/Tests/">
     <Project Path="tests/redpen.core.tests/redpen.core.tests.csproj" Id="082d8d7e-1606-457d-9829-03526b047897" />
   </Folder>
   <Project Path="src/redpen.abstractions/redpen.abstractions.csproj" Id="f5c402cf-0511-4262-b96f-80342da278b1" />

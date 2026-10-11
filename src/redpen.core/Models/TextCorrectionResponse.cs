@@ -1,8 +1,6 @@
-﻿using System.ComponentModel;
+﻿namespace redpen.core.Models;
 
-namespace redpen.core.Models;
-
-internal sealed record CorrectionResponse
+internal sealed record TextCorrectionResponse
 {
     [Description("The fully corrected version of the input text, preserving its original meaning and language.")]
     public string CorrectedText { get; init; } = string.Empty;

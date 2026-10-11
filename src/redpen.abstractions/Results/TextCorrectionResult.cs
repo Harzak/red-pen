@@ -1,8 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿namespace redpen.abstractions.Results;
 
-namespace redpen.abstractions.Results;
-
-public sealed class TextCorrectionResult : OperationResult
+public sealed class TextCorrectionResult : ChatOperationResult
 {
     public string OriginalText { get; set; } = string.Empty;
     public string CorrectedText { get; set; } = string.Empty;

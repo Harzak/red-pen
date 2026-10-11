@@ -1,10 +1,9 @@
-﻿
-/// redpen.abstractions
+﻿/// redpen
 global using redpen.abstractions.Results;
+global using redpen.abstractions.Enums;
+global using redpen.abstractions.Options;
 global using redpen.abstractions.Services;
 global using redpen.core.Configurations;
-global using redpen.abstractions.Interfaces;
-global using redpen.abstractions.Enums;
 
 /// .NET
 global using Microsoft.Extensions.Configuration;

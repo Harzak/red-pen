@@ -12,7 +12,7 @@ public static class ServiceCollectionExtension
     {
         ArgumentNullException.ThrowIfNull(services);
 
-        services.AddSingleton<ICorrectionService, CorrectionService>();
+        services.AddSingleton<ITextCorrectionService, TextCorrectionService>();
         services.AddSingleton<IChatClientFactory, ChatClientFactory>();
         services.AddSingleton<IPromptFactory, PromptFactory>();
 

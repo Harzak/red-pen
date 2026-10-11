@@ -1,6 +1,6 @@
 ﻿namespace redpen.abstractions.Enums
 {
-    public enum EResponseMode
+    public enum ETextResponseMode
     {
         Unknown = 0,
         /// <summary>

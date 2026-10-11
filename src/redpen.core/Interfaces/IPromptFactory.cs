@@ -2,5 +2,8 @@
 
 internal interface IPromptFactory
 {
-    string CreateTextCorrectionPrompt(ECorrectionMode correctionMode, EResponseMode responseMode);
+    string CreateTextCorrectionPrompt(
+        ETextCorrectionMode correctionMode,
+        ETextResponseMode responseMode,
+        CultureInfo? textLanguage = null);
 }

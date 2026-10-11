@@ -25,4 +25,8 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\redpen.abstractions\redpen.abstractions.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <InternalsVisibleTo Include="redpen.core.tests" />
+	  <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+	</ItemGroup>
 </Project>

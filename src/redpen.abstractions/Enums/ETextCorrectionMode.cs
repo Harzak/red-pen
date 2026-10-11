@@ -1,6 +1,6 @@
 ﻿namespace redpen.abstractions.Enums
 {
-    public enum ECorrectionMode
+    public enum ETextCorrectionMode
     {
         Unknown = 0,
         /// <summary>
