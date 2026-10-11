@@ -1,5 +1,4 @@
 ﻿/// redpen.abstractions
-
-
-/// .NET
-global using Microsoft.Extensions.AI;
+global using redpen.abstractions.Results;
+global using redpen.abstractions.Interfaces;
+global using redpen.abstractions.Enums;

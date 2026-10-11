@@ -14,6 +14,11 @@ public static class ServiceCollectionExtension
 
         services.AddSingleton<ICorrectionService, CorrectionService>();
         services.AddSingleton<IChatClientFactory, ChatClientFactory>();
+        services.AddSingleton<IPromptFactory, PromptFactory>();
+
+        services.AddTransient<LoggingHttpMessageHandler>();
+        services.AddHttpClient(HttpClientConsts.CHAT_CLIENT_NAME)
+            .AddHttpMessageHandler<LoggingHttpMessageHandler>();
 
         return services;
     }

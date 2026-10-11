@@ -2,5 +2,5 @@
 
 public interface ICorrectionService
 {
-    Task<string> CorrectAsync(string text);
+    Task<TextCorrectionResult> CorrectAsync(string text, ECorrectionMode correctionMode, EResponseMode responseMode);
 }
