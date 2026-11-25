@@ -17,7 +17,7 @@ internal sealed class TextCorrectionService : ITextCorrectionService
         _promptFactory = promptFactory;
     }
 
-    public async Task<TextCorrectionResult> CorrectAsync(string text, TextCorrectionOptions options)
+    public async Task<TextCorrectionResult> CorrectAsync(string text, TextCorrectionOptions options, CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(options);
 
@@ -41,7 +41,11 @@ internal sealed class TextCorrectionService : ITextCorrectionService
         ChatMessage instruction = new(ChatRole.System, instructionText);
         ChatMessage userText = new(ChatRole.User, $"{USER_PROMPT_PREFIX}: \"{text}\"");
 
-        ChatResponse<TextCorrectionResponse> response = await _chatClient.GetResponseAsync<TextCorrectionResponse>([instruction, userText], chatOptions).ConfigureAwait(false);
+        ChatResponse<TextCorrectionResponse> response = await _chatClient.GetResponseAsync<TextCorrectionResponse>(
+            messages: [instruction, userText],
+            chatOptions,
+            useJsonSchemaResponseFormat: false,
+            cancellationToken).ConfigureAwait(false);
 
         if (response.Result == null
             || string.IsNullOrWhiteSpace(response.Result.CorrectedText))

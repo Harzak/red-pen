@@ -2,5 +2,5 @@
 
 public interface ITextCorrectionService
 {
-    Task<TextCorrectionResult> CorrectAsync(string text, TextCorrectionOptions options);
+    Task<TextCorrectionResult> CorrectAsync(string text, TextCorrectionOptions options,CancellationToken cancellationToken = default);
 }
