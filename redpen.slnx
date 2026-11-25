@@ -12,4 +12,5 @@
   </Folder>
   <Project Path="src/redpen.abstractions/redpen.abstractions.csproj" Id="f5c402cf-0511-4262-b96f-80342da278b1" />
   <Project Path="src/redpen.core/redpen.core.csproj" />
+  <Project Path="src/redpen.resources/redpen.resources.csproj" />
 </Solution>
