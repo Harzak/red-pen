@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Samples/">
     <Project Path="samples/redpen.demo.console/redpen.demo.console.csproj" Id="c81d3af6-2d24-4ac2-9bef-d38ce2d13614" />
+    <Project Path="samples/redpen.demo.desktop/redpen.demo.desktop.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="Directory.Build.props" />

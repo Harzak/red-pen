@@ -1,0 +1,8 @@
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
+root = true
+
+# C# files
+[*.cs]
+
+# CA1812: 'Program' is an internal class that is apparently never instantiated.
+dotnet_diagnostic.CA1812.severity = none
