@@ -3,6 +3,7 @@ global using redpen.demo.desktop.Configurations;
 global using redpen.demo.desktop.Views;
 global using redpen.demo.desktop.ViewModels;
 global using redpen.core.Configurations;
+global using redpen.abstractions.Enums;
 global using redpen.abstractions.Options;
 global using redpen.abstractions.Results;
 global using redpen.abstractions.Services;

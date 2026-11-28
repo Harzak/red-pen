@@ -7,6 +7,16 @@ internal sealed partial class TextEditorViewModel : ViewModelBase
 
     public string CorrectButtonLabel => _localizer[StringKeys.TextEditorCorrectButton];
 
+    public IReadOnlyList<ETextCorrectionMode> CorrectionModes { get; } = [ETextCorrectionMode.GrammarAndSpelling, ETextCorrectionMode.StyleAndTone];
+
+    public IReadOnlyList<ETextResponseMode> ResponseModes { get; } = [ETextResponseMode.Concise, ETextResponseMode.Detailed];
+
+    [ObservableProperty]
+    private ETextCorrectionMode _selectedCorrectionMode = ETextCorrectionMode.GrammarAndSpelling;
+
+    [ObservableProperty]
+    private ETextResponseMode _selectedResponseMode = ETextResponseMode.Concise;
+
     [ObservableProperty]
     private string _text = string.Empty;
 
@@ -33,6 +43,8 @@ internal sealed partial class TextEditorViewModel : ViewModelBase
         TextCorrectionOptions options = new()
         {
             TextLanguage = CultureInfo.CurrentUICulture,
+            CorrectionMode = this.SelectedCorrectionMode,
+            ResponseMode = this.SelectedResponseMode,
         };
         TextCorrectionResult result = await _correctionService.CorrectAsync(this.Text, options, cancellationToken).ConfigureAwait(false);
 

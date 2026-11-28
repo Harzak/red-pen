@@ -36,12 +36,12 @@
                 <ComboBox MinWidth="140" Margin="0,0,8,0" SelectedIndex="0">
                     <ComboBoxItem Content="Select a language" />
                 </ComboBox>
-                <ComboBox MinWidth="140" Margin="0,0,8,0" SelectedIndex="0">
-                    <ComboBoxItem Content="Select a correction mode" />
-                </ComboBox>
-                <ComboBox MinWidth="140" SelectedIndex="0">
-                    <ComboBoxItem Content="Select a response mode" />
-                </ComboBox>
+                <ComboBox MinWidth="140" Margin="0,0,8,0"
+                          ItemsSource="{Binding CorrectionModes}"
+                          SelectedItem="{Binding SelectedCorrectionMode}" />
+                <ComboBox MinWidth="140"
+                          ItemsSource="{Binding ResponseModes}"
+                          SelectedItem="{Binding SelectedResponseMode}" />
             </StackPanel>
             <Button Grid.Row="0" Grid.Column="1" MinWidth="180" MinHeight="40"
                     Padding="16,8" VerticalAlignment="Center"
